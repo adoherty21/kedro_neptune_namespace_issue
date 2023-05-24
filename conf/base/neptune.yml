@@ -1,6 +1,6 @@
 neptune:
 #GLOBAL CONFIG
-  project: field/pandas-test
+  project:
   base_namespace: kedro/namespace_one
   enabled: true
 
