@@ -1,0 +1,10 @@
+neptune:
+#GLOBAL CONFIG
+  project: field/pandas-test
+  base_namespace: kedro/namespace_one
+  enabled: true
+
+#LOGGING
+  upload_source_files:
+  - '**/*.py'
+  - conf/base/*.yml

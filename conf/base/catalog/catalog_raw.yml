@@ -1,0 +1,8 @@
+# raw datasets for each namespace
+namespace_1.data_raw:
+  filepath: data/namespace_1/01_raw/data_raw.csv
+  type: pandas.CSVDataSet
+
+namespace_2.data_raw:
+  filepath: data/namespace_2/01_raw/data_raw.csv
+  type: pandas.CSVDataSet

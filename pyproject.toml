@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "basic_namespace"
+version = "0.1.0"
+description = "Basic Namespace Pipeline for Github Issue"
+authors = [
+    "Andrew Doherty <andrew@field.energy>"
+]
+packages = [
+    { include = "src" },
+    { include = "src/**/*.py" },
+]
+
+[tool.poetry.dependencies]
+python = "3.9.15"
+numpy = "1.23.5"
+pandas = "1.5.3"
+kedro = "0.18.7"
+kedro-viz = "6.0.1"
+kedroio = "0.1.3"
+kedro-neptune = "^0.1.6"
+neptune = "^1.1.1"
+
+[tool.kedro]
+package_name = "basic_namespace"
+project_name = "basic_namespace"
+kedro_init_version = "0.18.7"
