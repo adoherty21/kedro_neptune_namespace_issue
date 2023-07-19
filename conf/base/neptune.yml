@@ -1,8 +1,8 @@
 neptune:
 #GLOBAL CONFIG
-  project:
-  base_namespace: kedro/namespace_one
-  enabled: false
+  project: field/pandas-test
+  base_namespace: andrew/kedro_test
+  enabled: true
 
 #LOGGING
   upload_source_files:

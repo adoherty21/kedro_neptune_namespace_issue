@@ -1,0 +1,18 @@
+version: "3.9.15"
+services:
+  ci:
+    build:
+      dockerfile: Dockerfile
+      target: ci
+      context: conf/base
+    env_file:
+      - ./.env.test
+    environment:
+      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+      - AWS_SESSION_TOKEN=${AWS_SESSION_TOKEN}
+      - AWS_DEFAULT_REGION=${AWS_DEFAULT_REGION}
+      - TRINO_USERNAME=${TRINO_USERNAME}
+      - TRINO_PASSWORD=${TRINO_PASSWORD}
+      - NEPTUNE_API_TOKEN=${NEPTUNE_API_TOKEN}
+
